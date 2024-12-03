@@ -5,9 +5,29 @@
 ##1 3 2 4 5 unsafe 'cause it first increased then decreased!
 ##Each line is a report so chechk how many reports are safe!
 
-cal_doc = open('2024_day_2_input.txt', 'r')
+##44 47 48 49 48
+##64 66 68 69 71 72 72
+
+
+rep_doc = open('2024_day_2_input.txt', 'r')
+
+# def increasing():
+
+# def decresing():
+
 
 def part_one():
-    print(4 <= 3)
+    line_num = ''; report = [];
+
+    for line in rep_doc:
+        for c in line:
+            if(c != ' ' && c != 'c'):
+                line_num = line_num + c
+            else:
+                print(line_num)
+                line_num = ''
+        print(report)
+        report = []
+        
 
 part_one()
